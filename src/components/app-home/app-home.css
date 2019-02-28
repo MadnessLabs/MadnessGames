@@ -1,7 +1,6 @@
 #home {
     width: 350px;
     height: 350px;
-    background-image: url('../img/snake.png');
     background-size: auto 350px;
     background-repeat: no-repeat;
     background-color: lightblue;
