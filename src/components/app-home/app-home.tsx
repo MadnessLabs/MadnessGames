@@ -11,7 +11,7 @@ export class AppHome {
   snake: Snake;
 
   componentDidLoad() {
-    this.snake = new Snake(this.homeEl.querySelector('canvas'), this.homeEl.querySelector('#btn'));
+    this.snake = new Snake(this.homeEl.querySelector('#mycanvas'), this.homeEl.querySelector('#btn'));
   }
 
   startGame() {

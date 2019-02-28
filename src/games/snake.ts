@@ -58,11 +58,10 @@ export class Snake {
         this.direction = 'down';
         this.drawSnake();
         this.createFood();
-        this.gameLoop = setInterval(this.paint, 80);
+        this.gameLoop = setInterval(this.paint.bind(this), 80);
         if (!this.isListening) {
             this.startKeyListeners();
         }
-
     }
 
     startKeyListeners() {
